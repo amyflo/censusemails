@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+@media (max-width: 600px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (min-width: 1200px){
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+.container {
+    padding: 16px 16px;
+}
+
+.heading{
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.module{
+    max-width: 600px;
+    min-height: 200px;
+}
+
+.btn-aqua {
+    background-color: #4093A5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-aqua:hover, active {
+    border: solid;
+    background-color:#337484;
+    border-color: lightblue;
+    border-width: 2px;
+}
+
+.btn-orange{
+    background-color: #E77649;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-orange:hover, active {
+    border: solid;
+    background-color:#D9521C;
+    border-color: lightsalmon;
+    border-width: 2px;
+}
+
+.btn-navy{
+    background-color: #182E4E;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.btn-navy:hover, active {
+    border: solid;
+    background-color:#13243E;
+    border-color: lightblue;
+    border-width: 2px;
+}
+
+.navy{
+    background-color: #182E4E;
+    color: white;
+}
+
+.aqua{
+    background-color: #4093A5;
+    color: white;
+}
+
+.orange{
+    background-color: #E77649;
+}
+
+.grey{
+    background-color: #EEEEEE;
+    color: black;
+}

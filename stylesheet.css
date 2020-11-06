@@ -1,3 +1,10 @@
+.bg-orange:hover, active, focus {
+    background-color:#D9521C !important;
+}
+.bg-navy:hover, active, focus{
+    background-color:#13243E !important;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -6,6 +13,9 @@ body {
     text-align: center;
 }
 
+header{
+    padding: 10px;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;

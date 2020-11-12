@@ -47,6 +47,7 @@ header{
 
     td[data-th]:before  {
     content: attr(data-th);
+    }
 }
 
 .heading{
@@ -58,12 +59,7 @@ header{
     text-align: center;
 }
 
-.module{
-    max-width: 600px;
-    min-height: 200px;
-}
-
-.btn-aqua {
+.btn-aqua{
     background-color: #4093A5;
     border: none;
     color: white;
@@ -98,7 +94,7 @@ header{
     border-radius: 5px;
 }
 
-.btn-orange:hover, active {
+.btn-orange:hover, active{
     border: solid;
     background-color:#D9521C;
     border-color: lightsalmon;

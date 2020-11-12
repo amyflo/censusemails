@@ -126,22 +126,3 @@ header{
     border-color: lightblue;
     border-width: 2px;
 }
-
-.navy{
-    background-color: #182E4E;
-    color: white;
-}
-
-.aqua{
-    background-color: #4093A5;
-    color: white;
-}
-
-.orange{
-    background-color: #E77649;
-}
-
-.grey{
-    background-color: #EEEEEE;
-    color: black;
-}

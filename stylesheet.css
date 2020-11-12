@@ -36,6 +36,19 @@ header{
     padding: 16px 16px;
 }
 
+@media only screen and (max-width: 40em) {
+    thead th:not(:first-child) {
+    display: none;
+    }
+
+    td, th {
+    display: block;
+    }
+
+    td[data-th]:before  {
+    content: attr(data-th);
+}
+
 .heading{
     font-family: Roboto;
     font-size: 24px;

@@ -7,6 +7,14 @@
     <title>Responsive Email Modules</title>
   </head>
   <body>
+    <table style="border-top-width: 10px; border-top-color: #205493; border-top-style: solid; border-collapse: collapse;" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tbody><tr>
+        <td id="main-header" data-govdstyle="all" data-govdtitle="Main Header" style="background-color: #ffffff; padding: 0px;" width="100%" bgcolor="#ffffff" align="center">
+        <a href="https://www.census.gov/newsroom/press-releases/2020/partner-goals.html" target="_blank" rel="noopener noreferrer" style="color: #0095A8; text-decoration: underline; -ms-word-break: break-all; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;"><img class="govd_template_image" src="https://content.govdelivery.com/attachments/fancy_images/USCENSUS/2019/09/2785774/2800900/2020-bluelogo-original_crop.png" style="width: 214px; height: auto !important; max-height: auto !important; border: none;" alt="United States Census 2020" width="214" height="142"></a>
+        </td>
+        </tr>
+        </tbody>
+    </table>
     <header>
         <h1>Responsive Email Modules</h1>
         <p>All email modules are responsive for mobile.</p>
@@ -15,39 +23,21 @@
     <h2>Tabular - Passes all Litmus tests</h2>
     <p>These versions have passed all tests on all devices.</p>
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="5" class="example-table" bgcolor="#EEEEEE">
-        <tbody>
-            <tr><td>&nbsp;</td></tr>
-            <!--Title-->
-            <tr>
-                <td align="center" style="font-size:24px; font-weight:700">
-                <font face="'Roboto', Arial, sans-serif">
-                    Don't miss an America Counts story!</font></td>
-            </tr>
-            <!--Description-->
-            <tr>
-                <td align="center" style="font-size:16px; font-weight:300">
-                <font face="'Roboto', Arial, sans-serif">
-                    Stay in the know about the stories behind the numbers.</font></td>
-            </tr>
-            <!--Call to Action-->
-            <tr>
-            <td align="center">
-                <table border="0" cellspacing="0" cellpadding="0">
-                <tbody><tr>
-                    <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
-                    <a href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" 
-                    target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
-                        padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
-                        <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
-                    </td>
-                </tr>
-                </tbody></table>
-            </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-        </tbody>
-    </table>
+    <style>
+        @media only screen and (max-width: 40em) {
+        thead th:not(:first-child) {
+        display: none;
+        }
+
+        td, th {
+        display: block;
+        }
+
+        td[data-th]:before  {
+        content: attr(data-th);
+        }
+        }
+    </style>
 
     <div class="grid-container">
         <!--Grey background, orange button-->
@@ -239,6 +229,6 @@
                     Subscribe Here</a>
             </div>
         </div>
-    </div>
+       </div>
   </body>
 </html> 

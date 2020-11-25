@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <span style="font-family: Roboto;"></span>
+    <title>Basic Module Maker</title>
+  </head>
+  <body>
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#cta">Calls to Action</a></li>
+            <li><a href="index.html#interactive">Interactive</a></li>
+            <li><a href="sample.html">Sample Email</a></li>
+            <li><a class="active" href="module.html">Creator</a></li>
+        </ul>
+    </nav>
+
+        <div class="sidebar">
+          <div class="sidebar-content">
+            <h1 class="left">Module Creator</h1>
+            <form style="text-align: left" onsubmit ="return false">
+                <label for="title">Title</label><br>
+                <textarea class="text-boxes" rows = "2" cols = "40" name = "title" id="title"
+                placeholder="Don't miss an America Counts Story!" required></textarea><br>
+
+                <label for="description">Description</label><br>
+                <textarea class="text-boxes" rows = "2" cols = "40" name = "description" id="description"
+                placeholder="Stay in the know about the stories behind the numbers." required></textarea><br>
+                
+                <label for="url">Call to Action Text</label><br>
+                <input type="text" class="text-boxes" id="cta-text" name="cta-text" 
+                placeholder="Call to action text" required><br>
+        
+                <label for="url">Call to Action URL</label><br>
+                <input type="url" name="url" id="url"
+                    class="text-boxes"
+                    placeholder="https://example.com"
+                    pattern="https://.*"
+                    required>
+                <br>
+                <button> Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            </div>
+         </div>
+
+      <div class="maker">
+        <div id="sample-module">
+            <h2>Sample Module</h2>
+            <p style="text-align: left">This should disappear when the submit button is pressed. When the submit button is pressed, this should also show the updated function by creating the element here. 
+                This should be done through a JS function that creates the and pastes it above this divider while making this hidden. There should be a copy code button somewhere. </p>
+            <div style="background: #EEEEEE">
+                <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#EEEEEE">
+                    <tbody>
+                    <tr><td>&nbsp;</td></tr>
+                    <!--Title-->
+                    <tr>
+                        <td align="center">
+                            <p style="color: black; font-family: sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; margin: 0;">Title</p></td>
+                    </tr>
+                    <!--Description-->
+                    <tr>
+                        <td align="center">
+                            <p style="color: black; font-family: sans-serif; font-size: 16px; margin: 0;">Description</p></td>
+                    </tr>
+                    <!--Call to Action-->
+                    <tr>
+                        <td align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                                    <a href="#" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                                        padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                                      <font face="'Roboto', Arial, sans-serif">Call to Action Text</font></a>
+                                </td>
+                            </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -41,20 +41,26 @@ li a.active {
     transition: 0.3s;
 }
 
-
-section{
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    height: 100%;
-}
 /* Hero */
 .hero{
-    background-image: linear-gradient(to right, #337484, #182E4E);
+    background: linear-gradient(to right, #337484, #182E4E);
     padding: 50px;
     color: white;
 }
 
 /* Hover states for buttons */
+button{
+    background-color:#e9703e;
+    padding: 12px 18px;
+    margin-right: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
 .bg-orange:hover, active, focus {
     background-color:#D9521C !important;
 }
@@ -93,6 +99,9 @@ h3{
     font-family: "Roboto", sans-serif;
 }
 
+left{
+    text-align: left;
+}
 /* Grid Container */
 .grid-container {
     display: grid;
@@ -109,24 +118,64 @@ h3{
     .grid-container { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media only screen and (max-width: 40em) {
-    thead th:not(:first-child) {
-        display: none;
-    }
+/* Form */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    position: absolute;
+    background: linear-gradient(to bottom, #337484, #182E4E);
+    height: 100%;
+    overflow: auto;
+    font-size: 1em;
+    color: white;
+}
 
-    td, th {
-        display: block;
-    }
+div.maker {
+margin-left: 400px;
+padding: 1px 16px;
+}
 
-    td[data-th]:before  {
-        content: attr(data-th);
+.sidebar-content{
+    margin: auto;
+    padding: 30px;
+}
+@media screen and (max-width: 700px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.sidebar a {float: left;}
+div.maker {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
     }
-    .hidden{
-        display: none;
+    .sidebar-content{
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
-.static:hover{
-    opacity: 0;
-} 
+.text-boxes {
+    border: none;
+    margin-bottom: 20px;
+    padding: 5px;
+    max-width: 300px;
+    min-height: 20px;
+    width: 300px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
 
+
+#sample-module{
+    margin-top: 10px;
+}

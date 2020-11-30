@@ -1,0 +1,23 @@
+{
+  "name": "censusemails",
+  "version": "1.0.0",
+  "description": "Responsive email modules for the U.S. Census Bureau for Storyports and GovDelivery integration.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amyflo/censusemails.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amyflo/censusemails/issues"
+  },
+  "homepage": "https://github.com/amyflo/censusemails#readme",
+  "dependencies": {
+    "mjml": "^4.7.1"
+  }
+}

@@ -179,3 +179,7 @@ div.maker {margin-left: 0;}
 #sample-module{
     margin-top: 10px;
 }
+
+html{
+    scroll-behavior: smooth;
+}

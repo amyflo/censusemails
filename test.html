@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<style>
+/* Navigation */
+nav {
+    overflow: hidden;
+    border-bottom: 1px solid #415773;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #182E4E;
+}
+  
+li {
+float: left;
+}
+  
+li a {
+display: block;
+color:white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    color: #182E4E;
+    border-top: 3px solid rgb(255,86,33);
+    background-color: #E7EAED;
+    padding-top: 11px;
+    transition: 0.3s;
+}
+
+li a.active {
+    background-color: #13243E;
+    border-top: 3px solid white;
+    padding-top: 11px;
+    transition: 0.3s;
+}
+
+/* Hero */
+.hero{
+    background: linear-gradient(to right, #337484, #182E4E);
+    padding: 50px;
+    color: white;
+}
+
+/* Hover states for buttons */
+button{
+    background-color:#e9703e;
+    padding: 12px 18px;
+    margin-right: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-orange:hover, active, focus {
+    background-color:#D9521C !important;
+}
+.bg-navy:hover, active, focus{
+    background-color:#13243E !important;
+}
+
+/* Text Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    margin: .67em 0;
+    font-size: 2em;
+    line-height: normal;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    text-align: center;
+    color: #13243E;
+    padding: 10px;
+}
+
+h3{
+    font-weight: 200;
+    font-family: "Roboto", sans-serif;
+}
+
+left{
+    text-align: left;
+}
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(625px, 1fr));
+}
+
+@media (max-width: 600px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (min-width: 1200px){
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Form */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    position: absolute;
+    background: linear-gradient(to bottom, #337484, #182E4E);
+    height: 100%;
+    overflow: auto;
+    font-size: 1em;
+    color: white;
+}
+
+div.maker {
+margin-left: 400px;
+padding: 1px 16px;
+}
+
+.sidebar-content{
+    margin: auto;
+    padding: 30px;
+}
+@media screen and (max-width: 700px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.sidebar a {float: left;}
+div.maker {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .sidebar-content{
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.text-boxes {
+    border: none;
+    margin-bottom: 20px;
+    padding: 5px;
+    max-width: 300px;
+    min-height: 20px;
+    width: 300px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+
+#sample-module{
+    margin-top: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+</style>
+<html style="scroll-behavior: smooth;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="stylesheet.css">
+    <span style="font-family: Roboto;"></span>
+    <title>Responsive Email Modules</title>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;font-weight: 300;line-height: 21px;letter-spacing: 0em;text-align: center;margin: 0;">
+    <!--NAVIGATION-->
+    <nav style="overflow: hidden;border-bottom: 1px solid #415773;text-transform: uppercase;font-size: 14px;">
+        <ul class="nav-ul" style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #182E4E;">
+            <li style="float: left;"><a class="active" href="index.html" style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;background-color: #13243E;border-top: 3px solid white;padding-top: 11px;transition: 0.3s;">Home</a></li>
+            <li style="float: left;"><a href="#cta" style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;">Calls to Action</a></li>
+            <li style="float: left;"><a href="#interactive" style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;">Interactive</a></li>
+            <li style="float: left;"><a href="sample.html" style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;">Sample Email</a></li>
+            <li style="float: left;"><a href="module.html" style="display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;">Creator</a></li>
+        </ul>
+    </nav>
+    <!--HERO-->
+    <div class="hero" style="background: linear-gradient(to right, #337484, #182E4E);padding: 50px;color: white;">
+      <h1 style="margin: .67em 0;font-size: 2em;line-height: normal;">Banana Bread</h1>
+      <table align="center" cellspacing="10">
+          <tr>
+            <td align="center">
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                  <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                    <a href="sample.html" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                        padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                      <font face="'Roboto', Arial, sans-serif">Check out a sample email!</font></a>
+                  </td>
+                  </tr>
+                </tbody></table>
+            </td>
+            <td align="center">
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                  <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                    <a href="module.html" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                        padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                      <font face="'Roboto', Arial, sans-serif">Make a module!</font></a>
+                  </td>
+                  </tr>
+                </tbody></table>
+            </td>
+          </tr>
+      </table>
+    </div>
+    <main>
+      <!--CALL TO ACTION-->
+      <section id="cta">
+      <h2 style="font-family: 'Roboto', sans-serif;font-size: 1.75rem;letter-spacing: 0;font-weight: 400;text-align: center;color: #13243E;padding: 10px;">Calls to Action</h2>
+      <div class="grid-container" style="display: grid;grid-template-columns: repeat(auto-fit, minmax(625px, 1fr));grid-gap: 0px;">
+        <!--Grey background, orange button-->
+        <div style="background: #EEEEEE">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#EEEEEE">
+            <tbody>
+              <tr><td>&nbsp;</td></tr>
+              <!--Title-->
+              <tr>
+                <td align="center" style="font-size:24px; font-weight:700">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Don't miss an America Counts story!</font></td>
+              </tr>
+              <!--Description-->
+              <tr>
+                <td align="center" style="font-size:16px; font-weight:300">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Stay in the know about the stories behind the numbers.</font></td>
+              </tr>
+              <!--Call to Action-->
+              <tr>
+                <td align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                        <a href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                          padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                          <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
+                      </td>
+                      </tr>
+                    </tbody></table>
+                </td>
+              </tr>
+              <tr><td>&nbsp;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Aqua background, navy button-->
+        <div style="background: #4093A5">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#4093A5">
+            <tbody>
+              <tr><td>&nbsp;</td></tr>
+              <!--Title-->
+              <tr>
+                <td align="center" style="font-size:24px; font-weight:700; color: #ffffff;">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Don't miss an America Counts story!</font></td>
+              </tr>
+              <!--Description-->
+              <tr>
+                <td align="center" style="font-size:16px; font-weight:300; color: #ffffff">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Stay in the know about the stories behind the numbers.</font></td>
+              </tr>
+              <!--Call to Action-->
+              <tr>
+                <td align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="center" style="border-radius: 5px;" bgcolor="#182E4E" class="bg-navy">
+                        <a href="https://public.govdelivery.com/accounts/USCENSUS/signup/19707" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                                                  padding: 12px 18px; border: 2px solid #182E4E; display: inline-block;">
+                          <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
+                      </td>
+                      </tr>
+                    </tbody></table>
+                </td>
+              </tr>
+              <tr><td>&nbsp;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Navy background, orange button-->
+        <div style="background: #182E4E">
+            <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#182E4E">
+              <tbody>
+                <tr><td>&nbsp;</td></tr>
+                <!--Title-->
+                <tr>
+                  <td align="center" style="font-size:24px; font-weight:700; color: #ffffff;">
+                    <font face="'Roboto', Arial, sans-serif">
+                      Don't miss an America Counts story!</font></td>
+                </tr>
+                <!--Description-->
+                <tr>
+                  <td align="center" style="font-size:16px; font-weight:300; color: #ffffff">
+                    <font face="'Roboto', Arial, sans-serif">
+                      Stay in the know about the stories behind the numbers.</font></td>
+                </tr>
+                <!--Call to Action-->
+                <tr>
+                  <td align="center">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                          <a href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                                                    padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                            <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
+                        </td>
+                        </tr>
+                      </tbody></table>
+                  </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+              </tbody>
+            </table>
+        </div>
+        <!--Grey background, navy button-->
+        <div style="background: #EEEEEE">
+            <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#EEEEEE">
+              <tbody>
+                <tr><td>&nbsp;</td></tr>
+                <!--Title-->
+                <tr>
+                  <td align="center" style="font-size:24px; font-weight:700">
+                    <font face="'Roboto', Arial, sans-serif">
+                      Don't miss an America Counts story!</font></td>
+                </tr>
+                <!--Description-->
+                <tr>
+                  <td align="center" style="font-size:16px; font-weight:300">
+                    <font face="'Roboto', Arial, sans-serif">
+                      Stay in the know about the stories behind the numbers.</font></td>
+                </tr>
+                <!--Call to Action-->
+                <tr>
+                  <td align="center">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td align="center" style="border-radius: 5px;" bgcolor="#182E4E" class="bg-navy">
+                          <a href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                                          padding: 12px 18px; border: 2px solid #182E4E; display: inline-block;">
+                            <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
+                        </td>
+                        </tr>
+                      </tbody></table>
+                  </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      </section>
+      
+      <!--INTERACTIVE-->
+      <section id="interactive">
+          <h2 style="font-family: 'Roboto', sans-serif;font-size: 1.75rem;letter-spacing: 0;font-weight: 400;text-align: center;color: #13243E;padding: 10px;">Interactive</h2>
+          <h3 style="font-weight: 200;font-family: Roboto', sans-serif;">Responsive, collapsible icons</h3>
+          <p>Icons on the left will disappear on mobile devices to provide more space for the readers.</p>
+          <div style="width: 600px; margin:auto; background:white;">
+              <div>
+                  <table cellspacing="10" cellpadding="10">
+                      <tr>
+                          <td class="hidden">
+                              <img width="60px" src="https://www.census.gov/content/census/en/data/academy/jcr:content/root/responsivegrid/featureicons.featureicon.1.png/1595368108771.png">
+                          </td>
+                          <td style="text-align: left; font-family: sans-serif;">
+                              <a href="https://www.census.gov/programs-surveys/acs/about.html">The American Community Survey</a> is the premier source for annual socioeconomic data and information about America's changing population, housing, and workforce.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="hidden">
+                              <img width="60px" src="https://www.census.gov/content/census/en/data/academy/jcr:content/root/responsivegrid/featureicons.featureicon.3.png/1568054372395.png">
+                          </td>
+                          <td style="text-align: left; font-family: sans-serif;">
+                              <a href="https://www.census.gov/programs-surveys/acs/about.html">The Economic Census</a> measures the nation's economy every 5 years providing vital statistics for every industry and geographic area.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="hidden">
+                              <img width="60px" src="https://www.census.gov/content/census/en/data/academy/jcr:content/root/responsivegrid/featureicons.featureicon.2.png/1568054372362.png">
+                          </td>
+                          <td style="text-align: left; font-family: sans-serif;">
+                              <a href="https://www.census.gov/programs-surveys/acs/about.html">National and State Population Estimates</a> utilize current data on births, deaths, and migration to calculate population change and produce time series of estimates of population, demographic components of change, and housing units.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="hidden">
+                              <img width="60px" src="https://www.census.gov/content/census/en/data/academy/jcr:content/root/responsivegrid/featureicons_1684181223.featureicon.1.png/1568054372476.png">
+                          </td>
+                          <td style="text-align: left; font-family: sans-serif;">
+                              <a href="https://www.census.gov/programs-surveys/acs/about.html">Income, Poverty, and Health Insurance Coverage</a> are increasingly important in measuring the nation's overall well-being.
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          
+          
+      </section>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+
+</html> 

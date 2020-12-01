@@ -22,7 +22,7 @@
         <div class="sidebar">
             <div class="sidebar-content">
               <h1 class="left">Module Creator</h1>
-              <form style="text-align: left" onsubmit ="return false">
+              <form style="text-align: left">
                   <label for="title">Title</label><br>
                   <textarea class="text-boxes" rows = "2" cols = "40" name = "title" id="title"
                   placeholder="Don't miss an America Counts Story!" required></textarea><br>
@@ -42,49 +42,54 @@
                       pattern="https://.*"
                       required>
                   <br>
-                  <button onclick = "showResult();"> Submit</button>
-                  <button type="reset">Reset</button>
+                  <button id="submit" type="submit" onclick="this.disabled = true, showResult();">Submit</button>
+                  <button id="reset" style="display: none"  onclick="window.location.reload();">Reset</button>
               </form>
             </div>
         </div>
         <div class="maker">
-            <div id="sample-module">
-                <h2>Sample Module</h2>
-                <p style="text-align: left">This should disappear when the submit button is pressed. When the submit button is pressed, this should also show the updated function by creating the element here. 
-                    This should be done through a JS function that creates the and pastes it above this divider while making this hidden. There should be a copy code button somewhere. </p>
-                <div style="background: #EEEEEE">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#EEEEEE">
-                        <tbody>
-                        <tr><td>&nbsp;</td></tr>
-                        <!--Title-->
-                        <tr>
-                            <td align="center">
-                                <p style="color: black; font-family: sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; margin: 0;">Title</p></td>
-                        </tr>
-                        <!--Description-->
-                        <tr>
-                            <td align="center">
-                                <p style="color: black; font-family: sans-serif; font-size: 16px; margin: 0;">Description</p></td>
-                        </tr>
-                        <!--Call to Action-->
-                        <tr>
-                            <td align="center">
-                            <table border="0" cellspacing="0" cellpadding="0">
-                                <tbody><tr>
-                                    <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
-                                        <a href="#" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
-                                            padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
-                                        <font face="'Roboto', Arial, sans-serif">Call to Action Text</font></a>
-                                    </td>
-                                </tr>
-                                </tbody></table>
-                            </td>
-                        </tr>
-                        <tr><td>&nbsp;</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+          <div>
+            <h2>Sample Module</h2>
+            <!--Grey background, orange button-->
+        <div style="background: #EEEEEE">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#EEEEEE">
+            <tbody>
+              <tr><td>&nbsp;</td></tr>
+              <!--Title-->
+              <tr>
+                <td align="center" style="font-size:24px; font-weight:700">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Don't miss an America Counts story!</font></td>
+              </tr>
+              <!--Description-->
+              <tr>
+                <td align="center" style="font-size:16px; font-weight:300">
+                  <font face="'Roboto', Arial, sans-serif">
+                    Stay in the know about the stories behind the numbers.</font></td>
+              </tr>
+              <!--Call to Action-->
+              <tr>
+                <td align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="center" style="border-radius: 5px;" bgcolor="#e9703e" class="bg-orange">
+                        <a href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; 
+                          padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;">
+                          <font face="'Roboto', Arial, sans-serif">Subscribe Here</font></a>
+                      </td>
+                      </tr>
+                    </tbody></table>
+                </td>
+              </tr>
+              <tr><td>&nbsp;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+          <div id="module">
+              <h2>Preview Module</h2>
+              <div id="main"></div>
+          </div>
         </div>
     </main>
     <script type = "text/javascript" src = "/assets/prototype.js"></script>

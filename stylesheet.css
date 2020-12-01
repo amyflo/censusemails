@@ -61,6 +61,11 @@ button{
     cursor: pointer;
 }
 
+
+button:hover, active, focus{
+    background-color:#D9521C !important;
+}
+
 .bg-orange:hover, active, focus {
     background-color:#D9521C !important;
 }
@@ -76,7 +81,19 @@ body {
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
+
+@keyframes fadeInAnimation { 
+0% { 
+    opacity: 0; 
+} 
+100% { 
+    opacity: 1; 
+    } 
+} 
 
 h1{
     margin: .67em 0;

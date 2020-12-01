@@ -12,10 +12,11 @@ function showResult(){
   // div.style.height = "100px";
   // div.style.background = "#EEEEEE"
   // div.style.color = "black";  
-  // var submit = document.getElementById("submit");
   var reset = document.getElementById("reset");
-  submit.style.display = 'none';
   reset.style.display = '';
+  var submit = document.getElementById("submit");
+  submit.style.display = 'none';
+
   // div.innerHTML = 
   // "<table width='100%' border='0' cellspacing='0' cellpadding='5' bgcolor='#EEEEEE'>" + 
   // "<tbody>" + "<tr><td>&nbsp;</td></tr>" + 

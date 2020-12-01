@@ -2,21 +2,29 @@ function date(){
   document.getElementById('demo').innerHTML = Date()
 }
 
+
+var catDiv = document.createElement("div");
+catDiv.innerHTML = "Test";
+document.body.appendChild(catDiv);
+
 function showResult(){
   var title = $('title').getValue();
   var description = $('description').getValue();
   var ctatext = $('cta-text').getValue();
   var url = $('url').getValue();
-  var div = document.createElement("div");
-  div.style.width = "100%";
-  div.style.height = "100px";
-  div.style.background = "#EEEEEE"
-  div.style.color = "black";  
-  var reset = document.getElementById("reset");
-  reset.style.display = '';
-  var submit = document.getElementById("submit");
-  submit.style.display = 'none';
-  div.innerHTML = "Hello";
+  var catDiv = document.createElement("div");
+  catDiv.innerHTML = "Test";
+  document.body.appendChild(catDiv);
+  // var div = document.createElement("div");
+  // div.style.width = "100%";
+  // div.style.height = "100px";
+  // div.style.background = "#EEEEEE"
+  // div.style.color = "black";  
+  // var reset = document.getElementById("reset");
+  // reset.style.display = '';
+  // var submit = document.getElementById("submit");
+  // submit.style.display = 'none';
+  // div.innerHTML = "Hello";
 
   // div.innerHTML = 
   // "<table width='100%' border='0' cellspacing='0' cellpadding='5' bgcolor='#EEEEEE'>" + 

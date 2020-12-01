@@ -1,9 +1,9 @@
 
 function showResult() {
-  var title = $('title').getValue();
-  var description = $('description').getValue();
-  var ctatext = $('cta-text').getValue();
-  var url = $('url').getValue();
+  var title = document.getElementById("title").value;
+  var description = document.getElementById("description").value;
+  var ctatext = document.getElementById("cta-text").value;
+  var url = document.getElementById("url").value;
   var div = document.createElement("div");
   div.style.width = "100%";
   div.style.height = "100px";

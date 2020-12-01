@@ -1,3 +1,6 @@
+function date(){
+  document.getElementById('demo').innerHTML = Date()
+}
 
 function showResult() {
   var title = $('title').getValue();

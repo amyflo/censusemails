@@ -3,15 +3,15 @@ function date(){
 }
 
 function showResult(){
-  // var title = $('title').getValue();
-  // var description = $('description').getValue();
-  // var ctatext = $('cta-text').getValue();
-  // var url = $('url').getValue();
-  // var div = document.createElement("div");
-  // div.style.width = "100%";
-  // div.style.height = "100px";
-  // div.style.background = "#EEEEEE"
-  // div.style.color = "black";  
+  var title = $('title').getValue();
+  var description = $('description').getValue();
+  var ctatext = $('cta-text').getValue();
+  var url = $('url').getValue();
+  var div = document.createElement("div");
+  div.style.width = "100%";
+  div.style.height = "100px";
+  div.style.background = "#EEEEEE"
+  div.style.color = "black";  
   var reset = document.getElementById("reset");
   reset.style.display = '';
   var submit = document.getElementById("submit");
@@ -27,5 +27,5 @@ function showResult(){
   // "<a href='" + url + "' style='font-size: 16px; color: #ffffff; text-decoration: none; text-decoration: none;border-radius: 5px; padding: 12px 18px; border: 2px solid #e9703e; display: inline-block;'>" + 
   // "<font face='sans-serif'>" + ctatext + "</font></a></td></tr></tbody></table></td></tr><tr><td>&nbsp;</td></tr>"
   // + "</tbody></table";
-  // document.getElementById("main").appendChild(div);
+  document.getElementById("main").appendChild(div);
 }

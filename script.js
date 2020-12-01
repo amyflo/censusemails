@@ -3,15 +3,11 @@ function date(){
 }
 
 
-var catDiv = document.createElement("div");
-catDiv.innerHTML = "Test";
-document.body.appendChild(catDiv);
-
 function showResult(){
-  var title = $('title').getValue();
-  var description = $('description').getValue();
-  var ctatext = $('cta-text').getValue();
-  var url = $('url').getValue();
+  // var title = $('title').getValue();
+  // var description = $('description').getValue();
+  // var ctatext = $('cta-text').getValue();
+  // var url = $('url').getValue();
   var catDiv = document.createElement("div");
   catDiv.innerHTML = "Test";
   document.body.appendChild(catDiv);

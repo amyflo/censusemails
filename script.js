@@ -16,6 +16,7 @@ function showResult(){
   reset.style.display = '';
   var submit = document.getElementById("submit");
   submit.style.display = 'none';
+  div.innerHTML = "Hello";
 
   // div.innerHTML = 
   // "<table width='100%' border='0' cellspacing='0' cellpadding='5' bgcolor='#EEEEEE'>" + 

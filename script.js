@@ -14,7 +14,7 @@ function showResult(){
   // div.style.color = "black";  
   // var submit = document.getElementById("submit");
   var reset = document.getElementById("reset");
-  // submit.style.display = 'none';
+  submit.style.display = 'none';
   reset.style.display = '';
   // div.innerHTML = 
   // "<table width='100%' border='0' cellspacing='0' cellpadding='5' bgcolor='#EEEEEE'>" + 
